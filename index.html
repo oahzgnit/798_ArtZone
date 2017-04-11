@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="ImageToolbar" content="No"><meta name="MSSmartTagsPreventParsing" content="True"><meta http-equiv="Expires" content="0"><meta http-equiv="Pragma" content="No-Cache"><meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>798 Art Zone</title>
+<link rel="SHORTCUT ICON" href="image/798.ico" type="image/x-icon"/>
+
+<link type="text/css" href="css/style.css" rel="stylesheet"/>
+<link type="text/css" href="css/menu.css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+
+</head>
+
+<body>
+<!--Main Container Starts -->
+<div id="main">
+			<!--Main Navigation Starts -->
+	    <div id="menu">
+		<ul class="menu">
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li><a href="#"><span>About 798</span></a>
+				<div><ul>
+					<li><a href="history.html"><span>798 History</span></a></li>
+					<li><a href="#" class="parent"><span>Approaching 798</span></a>
+						<div><ul>
+						<li><a href="#"><span>Now</span></a></li>
+						<li><a href="#"><span>Future</span></a></li>
+						</ul></div>
+					</li>
+					<li><a href="#"><span>Contact Us</span></a></li>
+			  </ul></div>
+		  </li>
+          <li><a href="#"><span>798 Organization</span></a>
+				<div><ul>
+					<li><a href="#" class="parent"><span>Art Center</span></a>
+						<div><ul>
+						<li><a href="artcenter.html"><span>Sectorization</span></a></li>
+						<li><a href="#"><span>Art Activity</span></a></li>
+                        <li><a href="#"><span>Commercial Activity</span></a></li>
+						</ul></div>
+					</li>
+					<li><a href="#"><span>Art Space</span></a></li>
+					<li><a href="#"><span>Art Gallery</span></a></li>
+					<li><a href="#"><span>Fashion Shops</span></a></li>
+					<li><a href="#"><span>Restaurant</span></a></li>
+					<li><a href="#"><span>Indibidual Studio</span></a></li>
+					<li><a href="#"><span>Company</span></a></li>
+			  </ul></div>
+		  </li>
+            <li><a href="#"><span>798 Info</span></a>
+				<div><ul>
+					<li><a href="#"><span>Exhibition</span></a></li>
+					<li><a href="#"><span>News</span></a></li>
+					<li><a href="#"><span>Notice</span></a></li>
+			  </ul></div>
+		  </li>
+            <li><a href="#" class="parent"><span>798 Magazine</span></a>
+				<div><ul>
+					<li><a href="#"><span>2007</span></a></li>
+					<li><a href="#"><span>2008</span></a></li>
+				</ul></div>
+			</li>
+            <li><a href="#"><span>798 Map</span></a></li>
+            <li><a href="#"><span>798 Art festial</span></a></li>
+			<li class="last"><a href="#"><span>798 Feedback</span></a></li>
+		</ul>
+	</div>
+<!--Main Navigation Ends -->
+
+	<!--Banner Area Starts -->
+	<div id="bannerArea">
+		<!-- <img src="image/798_logo.png" alt="798 Art Zone" title="798 Art Zone" onclick="location.href='index.html'" width="350" height="50" left="0" top="0"> -->
+
+<!-- slider Area Starts -->
+		<script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,
+                $AutoPlayInterval: 30000,
+                $SlideDuration: 500,
+                $DragOrientation: 3,
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,
+                    $ChanceToShow: 2,
+                    $Loop: 2,
+                    $SpacingX: 3,
+                    $SpacingY: 3,
+                    $DisplayPieces: 6,
+                    $ParkingPosition: 204,
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,
+                        $ChanceToShow: 2,
+                        $AutoCenter: 2,
+                        $Steps: 6 
+                    }
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 950));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            } 
+
+            // function ScaleSlider(){
+            //     $('.photo1 a').hover(function(){
+            //     	$('.photo1 span').fadeIn();
+            //     });
+            //     $('div#mainBodyContainer').hover(function(){
+            //     	$('.photo1 span').fadeOut();
+            //     });
+            //     // $(".photo1").mouseover(function(){
+            //     // $(".photo1 a:hover span").stop(true,true).fadeIn();
+            //     // });
+            //     // $(".photo1").mouseout(function(){
+            //     // $(".photo1 a:hover span").stop(true,true).fadeOut();
+            //     // });
+
+            // }
+
+        });
+
+
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+    <div id="slider1_container" style="position: relative; width: 950px; height: 633px; overflow: hidden;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 950px; height: 633px;
+            overflow: hidden;">
+            <div>
+                <div class="photo1"><a href="#">
+                <img u="image" src="image/xubing.jpg"/><span><h3>Xu Bing: Dwelling In Fuchun Mountaions</h3><br><h4>Through November 9, 2014</h4><br><h6>Research Exhibition on Xu Bing’s Background Story: Dwelling in Fuchun Mountains. That is a new step in the scale, concept and method in this series of works.</h6></span></a></div>
+                 
+
+                <div u="thumb" style="position: relative; width: 237px; height: 20px;"><img u="thumb" src="image/xubingthumb.jpg"/><span style="position: absolute; color: #fff; top: 1px; left: 32px;">Dwelling In Fuchun Mountaions</span></div>
+            </div>
+            <div>
+                <div class="photo2"><a href="#"><img u="image" src="image/boundary.jpg" /><span><h3>Dawei Wu: No Boundary</h3><br><h4>Through April 8, 2014</h4><br><h6>Explore self spiritual world<br><br>In the hustle and bustle of the city, Dawei Wu trying to create a simple and silent place that seems like his spiritual world. “No boundary: Explore self spiritual world,” will hold an opening ceremony at the Beijing 798 Art Zone on (Saturday) March 15, 2014, at 3:00 pm. The exhibition is organized by "HI Art" magazine and supported by Tencent culture.</h6></span></a></div>
+            <div u="thumb" style="position: relative; width: 237px; height: 20px;"><img u="thumb" src="image/boundarythumb.jpg" /><span style="position: absolute; color: #fff; top: 1px; left: 50px;">Dawei Wu: No Boundary</span></div>
+            </div>
+            <div>
+                <div class="photo3"><a href="#"><img u="image" src="image/mountainspirit.jpg" /><span><h3>Zhunwang Zhao: Mountain Spirit</h3><br><h4>Through August 20, 2014</h4><br><h6> “Abstract Landscpae – Zhao Zhunwang Solo Exhibition” will be opened at 798 Art Zone. The exhibition displays pieces of oil paintings by Zhao Zhunwang. </h6></span></a></div>
+
+                <div u="thumb" style="position: relative; width: 237px; height: 20px;"><img u="thumb" src="image/mountainspiritthumb.jpg" /><span style="position: absolute; color: #fff; top: 1px; left: 20px;">Zhunwang Zhao: Abstract Landscpae</span></div>
+            </div>
+            <div>
+                <div class="photo4"><a href="#"><img u="image" src="image/designshop.jpg" /><span><h3>Design Shop</h3><br><h4>Creative Products</h4><br><h6>Design to improve life. Let your life 
+                proceed by its own design.</h6></span></a></div>
+
+                <div u="thumb" style="position: relative; width: 237px; height: 20px;"><img u="thumb" src="image/designshopthumb.jpg" />/><span style="position: absolute; color: #fff; top: 1px; left: 83px;">Design Shop</span></div>
+            </div>
+            <!-- <div>
+                <img u="image" src="img/travel/05.jpg" />
+                <img u="thumb" src="img/travel/thumb-05.jpg" />
+            </div> -->
+            
+        </div>
+        
+        <!-- Thumbnail Navigator Skin Begin -->
+        <div u="thumbnavigator" class="jssort07" style="position: absolute; width: 950px; height: 20px; left: 0px; bottom: 0px; overflow: hidden; ">
+            <!-- <div style=" background-color: #000; filter:alpha(opacity=30); opacity:.3; width: 100%; height:100%;"></div> -->
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="POSITION: absolute; WIDTH: 237px; HEIGHT: 20px; TOP: 0; LEFT: 0; ">
+                    <thumbnailtemplate class="i" style="position:absolute;"></thumbnailtemplate>
+                    <div class="o">
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+            
+        </div>
+        <!-- ThumbnailNavigator Skin End -->
+
+        <!-- Trigger -->
+    </div>
+    <!-- Slider End -->
+
+
+
+
+
+	</div>
+	<!--Banner Area Ends -->
+
+
+<!--Main Body Container Starts -->
+	<div id="mainBodyContainer">
+
+        			<!--Block List Area Starts -->
+			<div id="blockListArea">
+				<h2>Our
+				<strong>Arts</strong>
+				<span>The Artists</span></h2>
+				<ul>
+					<li>
+						<ul>
+							<li><a href="#">Founded</a></li>
+							<li><a href="#">Baiyaxuan 798 Art Center</a></li>
+							<li><a href="#">Ming•Chao Art Cultural Co.</a></li>
+							<li><a href="#">Space Zero</a></li>
+							<li class="lastLi"></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="#">China Sculpture Institute Salon</a></li>
+							<li><a href="#">798 Theater</a></li>
+							<li><a href="#">offiCina Beijing</a></li>
+							<li><a href="#">Pace Beijing</a></li>
+							<li class="lastLi"></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="#">Asia Art Center</a></li>
+							<li><a href="#">Fundación de Cultura y Arte</a></li>
+							<li><a href="#">Shuimu Art Space</a></li>
+							<li><a href="#">SZ Art Center</a></li>
+							<li class="lastLi"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--Block List Area Ends -->
+
+		<div id="innerMainBodyContainer">
+
+			<!--Body Contaner Starts -->
+			<div id="bodyContainer">
+				<!--Left Panel Starts -->
+				<div id="leftPanel">
+					<h2>798 Art Zone</h2>
+					<p align="justify"><strong>Worldwide Art Pageant</strong><br>
+The area occupied by Beijing 798 Art Zone was once the place for Beijing North China wireless joint equipment factory (namely, 718 Joint Factory), which was designed and built by the experts of former G.D.R in the 1950s. The Joint Factory was designed to be built in 1952 , constructed from 1954,put into production in October 1957. <br>
+The designing task of the 718 Joint Factory was in the charge of a German architectural institution in Dessau, which lied in the same city with Bauhaus school at that time and they two shared the same architectural spirits whose main characteristics are meeting the practical demands; bringing the technical and aesthetic property of new materials and new structure into effect; designing simply and composing pictures vividly with flexibility. That is the genre what later called Bauhaus.</p>
+					<a href="#" title="More" class="moreLink">More</a>
+					<!--Block Area Starts -->
+					<div class="blockArea">
+						<!--Block 1 Starts -->
+						<div class="blocks">
+							<a href="#"><img src="image/pic1.jpg" width="178" height="65"></a>
+							<h3 class="noBg">In Bjorn’s Viewfinder</h3>
+							<p>Bjorn Holmsen, born in Sweden in 1965, borrowed his first camera at the age of four from grandpa, and even made his own word for “picturing”. </p>
+							<a href="#" title="" class="detailsLink"></a>
+						</div>
+						<!--Block 1 Ends -->
+						<!--Block 2 Starts -->
+						<div class="blocks">
+							<a href="#"><img src="image/pic2.jpg" width="178" height="65"></a>
+							<h3 class="noBg">Russian Master Series</h3>
+							<p>Exhibition of Vitaly Abramovich Orlovsky</p>
+							<a href="#" title="" class="detailsLink"></a>
+						</div>
+						<!--Block 2 Ends -->
+						<!--Block 3 Starts -->
+						<div class="blocks noRightMar">
+							<a href="#"><img src="image/pic3.jpg" width="178" height="65"></a>
+							<h3 class="noBg">Bump Into</h3>
+							<p>The Artists from three different countries in East Asia —— China, Korea, Japan</p>
+							<a href="#" title="" class="detailsLink"></a>
+						</div>
+						<!--Block 3 Ends -->
+						<br class="spacer">
+					</div>
+					<!--Block Area Ends -->
+				</div>
+				<!--Left Panel Ends -->
+				<!--Right Panel Starts -->
+				<div id="rightPanel">
+					<h2>News
+					<span>Updates</span></h2>
+					<h3><strong>04th November</strong> <span>2012</span></h3>
+					<p><strong>DSZ Culture Center</strong>
+					The celebration of Da Shan Zi Culture Center
+					<span><a href="#">Details</a></span></p>
+					<h3><strong>06th October</strong> <span>2012</span></h3>
+					<p><strong>WeiXin fund</strong>
+					The CEO of Taiwan WeiXin fund visited 798 Art Center
+					<span><a href="#">Details</a></span></p>
+					<h3><strong>25th January</strong> <span>2012</span></h3>
+					<p><strong>Arts Festival</strong>
+					Opening of Beijing 798 Art Festival
+					<span><a href="#">Details</a></span></p>
+					<img src="image/right-ad-banner.jpg" alt="Impression" title="Impression -  Chinese Calligraphy & Art Exhibition" class="rightAdPic" width="206" height="120">
+				</div>
+				<!--Right Panel Ends -->
+			</div>
+			<!--Body Contaner Ends -->
+		</div>
+	</div>
+	<div id="mainBodyContainerBot"></div>
+	<!--Main Body Container Ends -->
+	<!--Footer Area Starts -->
+	<div id="footerArea">
+		<div>
+			<ul class="footNav">
+				<li><a href="#" title="Home" class="active">Home</a></li>
+				<li>-</li>
+				<li><a href="#" title="About Ting">About Us</a></li>
+				<li>-</li>
+				<li><a href="#" title="Information">Information</a></li>
+				<li>-</li>
+				<li><a href="#" title="Contact">Contact</a></li>
+			</ul>
+			<!-- <ul class="validationList">
+				<li><a href="http://validator.w3.org/check?uri=referer" title="XHTML">Xhtml</a></li>
+				<li><a href="http://jigsaw.w3.org/css-validator/" title="CSS">Css</a></li>
+			</ul> -->
+		</div>
+		<script type="text/javascript">
+        $(document).ready(function(){
+        $("body div:last").remove();
+        });
+        </script>
+		<p>©Beijing 798 Art Zone. All Rights Reserved.
+		<strong>Design by: <a href="http://oahzgnit.com/" title="Ting Zhao" target="TING">Ting Zhao</a></strong></p>
+	</div>
+	<!--Footer Area Ends -->
+</div>
+<!--Main Container Ends -->
+</body></html>
